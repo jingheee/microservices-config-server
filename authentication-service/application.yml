@@ -6,6 +6,8 @@ spring:
     name: authentication-service
   datasource:
     url: jdbc:postgresql://localhost:5432/authentication-service
+    username: "{cipher}AQBjLm/xCfS0ZyxFlkahpSzo8KlHBvZmb8yJf1q7GFcpCEnovXH75TFB75GEf9a8jFBGRmz0hS1duPPEL+aqjaV7WbLkv9+LEpYOqMiA08pF/IPaBb5yDbfr4obBxFpUPMWpSKLMZkp4rLzIC++uhoS3vH80HBBcJj+8oMKkcKH4LFaa8/paWOBfwYsMwGvJaQnSyOa6syIf29snhHB8eqNJ4IMRs0S9wuFcFmtd0hXO4XixUhWaFZDNUQhEzMaI5GxHWjaF+8nFJcrz1TKYd3b9eK7lc89sp+kyIarw+Tq0GRc8FP6iH0osMak7jQ5fC3XBOJzeFmZXx+01Bqf4Nd/KXeOSySiXqQ94tPVYBBinPaSXpusCXSNLM+gQo9WRLhE="
+    password: "{cipher}AQASL/GAojaHfx8SQ2O6+UC6oDTmtwhkqfxGB/bt5ocHs0POpQPiuHvGOy3e5Nl0dfOAtGdNGlbZaNys9wmeuqbD0d4YEVchuF0jgUk37Xmvocf/AfBNevUGBGUCi6f8KOi6lwRdWL9V3YKank3R9/TxEhUDJMyrNiRKUgxVeNJj4nT5JeB+GX7Kn6L6+8VuK8Qku1Zf7X6z109+MSr/AkvkZjz9SYePsPpSoW2iSRQgQUlqjoYWZnBJ1FlAu5V7WHjSubCzXALhSnb6AhEUqvkVzk/cI+SZr2BQexrhBza4ksCGnv4rZEzq3w8SIr/81/BtUkuusBxFITKmqTOAZt4zKceAKn+9AFowxst/pisIfKGuVxrKjN4Tg7sTR0e9nLo="
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
@@ -20,6 +22,8 @@ spring:
     default-encoding: UTF-8
     host: smtp.gmail.com
     port: 587
+    username: "{cipher}AQBUU5ThovxTsIInFa4gcvbxABv8DitchF/fQvreUEx3AClVpFhdmejsnhYMuYJ12e/nTqhh5B9C0dci0Nr4C3/0mAo++MOky3hd+a+5C0mPaWMVK/1ovNkKzoCkTa29PfEtVlC26QPdwk+EQn5lwGf9zXLz1uD9yaSp7eeqC13HeG7ULGtL/f1SWbzMsECG5P9y6Io7bCkkc+0oTFsN6YU/nA6Ekmo8oilsL/wfJfjp+fl+QAtLyVIaHvO3Z9nn1nUzISXFdlrhVnY1ZEaMUATP6CZmaegb1X872yu8ithysXwrg/Qnd0iDx7UEEZhVqzMvMx0/W8UWJc9K6oILFaB51BT16NpEOFBmQYX8rHMBrNEo/iWctMyaXSKzOw0m2u67FKmNUal/VoGYa24y7j8S"
+    password: "{cipher}AQCtGH5FFq4PGE+aipLo76t1Q53AoRsbMuMq0zFxXgt0LPRKc3pQwGFTYU9FAOX8wfNZeQqGIcbUnkGyGt9/zkawqzA1gvyZJ2UVxw4sYeH3eiPHUQzqeF2R3I6AouJUvDNACLCnzwcErJLVtWPAIJFTQDavjDiZ5EFalBxgKmDeV6PMropZWlBcRKPGji0QKM3/IfcbTsBZHo86BAwhsj5fZRh0r7sVRzsjxB7LjdjxLjOLUtunnul5PRW2X4gSt80X2iVRKy3JfkgMirUcDMkhLzFebwDp3Qsoa/axfLpWiNR2G7eaVRUkBl3ao/ENqsLQw4kZUWAjRCSYzZ3F9Pr7Ef/QbY95otQYZ4HXe+86/xSv3BxaghfzPyGg7bDSRRa3f5cihJLiAqBMwnV9zCWH"
     properties:
       mail:
         smtp:
@@ -35,3 +39,6 @@ eureka:
 services:
   profile:
     name: profile-service
+
+secret:
+  key: "{cipher}AQAVAkmv7FMBha91bcEXRaI3KMgoYBvNJi8UVC4l1pQAGzSmHokxf50D4aUHso/MY090qndipAJo9LdMaPjLSPeUGzmIBW1A1/9RF5m+4WxFHodIhjdZoUgy/4nvGiN42mUcKex49fclBs1i0E50yIGywyo8aQ3acg2RvjLJeg2zDUM4qQvilzhTGUhmzCGXSUjjs4Z9rDnvQjDgPMLlff4eu1xL3ZTgaEivPyUeEzmHklyaz+dlOi3Hc72ymnJoyZHi6qnvMUkFfG5CAXswcTe7Hf4EH6YtYKFUDJ0YABUkHrWR4UlcrPCpLqQlbM7hF28OCDlPtPsRl5krkNBoVsLk5oMQlgY4gN+GWHBSI5wTsx4aos+Bx9nci7BMAn/dAl6WnDc8ZM4NnXk2VklYrX3lx3SHU996KryYz6IPicfQRfVw/UwTsCU/MDb/9N9SOGWeuO6q8PEDh4gbAEh1YMXE"
