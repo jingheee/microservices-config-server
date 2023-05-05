@@ -30,6 +30,13 @@ spring:
             - Path=/api/v1/profiles/**,/api/v1/follows/**
           filters:
             - Authentication
+				
+				- id: tweet-service
+          uri: lb://TWEET-SERVICE
+          predicates:
+            - Path=/api/v1/tweets/**,/api/v1/likes/**
+          filters:
+            - Authentication
 
 logging:
   level:
@@ -37,6 +44,6 @@ logging:
     org.springframework.cloud.gateway.route.RouteDefinitionLocator: info
     org.springframework.cloud.gateway: trace
 
-feign:
-  auth-client:
+services:
+  auth:
     name: authentication-service
