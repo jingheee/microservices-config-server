@@ -1,10 +1,6 @@
 server:
   port: 0
 
-spring:
-  application:
-    name: tweet-service
-
   datasource:
     url: jdbc:postgresql://localhost:5431/tweet-service
     username: {cipher}AQDC7OZldXW2lMbSctK+U6ftZDldBdhh2t/Jd7rOb3UEn8DIW9spkU8lm6PaQZKegRRR+AojmcTfkUwkj1DFz2McPMofDunesu+LDPoe7xwme8eHVxdmMOTxIwjtmsB1om0HNfcH+9M4xNMYiG/MRLqEtgL5Bx/eRB68yBzUQspms6AvM7JKTjE1lZtpRjDWjVdlc8ZPpeYLb0j4wjJ2+nr1MRdUFM/EQnngTsKySfGxoS3L9Nt7a76Z9Plyt+hWJMG52PhyCEi/XVsztr17NptBnkFS7hy7jf7mlU3h8ucvL0NT2uh2rdakjoK3a3ncbByRX4BE+QJnxfaV0xQ1/0tutGfVNQfBJVy92nDKFFn/C4mUnqLzDonDkuAns9k/djc=
