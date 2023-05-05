@@ -30,8 +30,8 @@ spring:
             - Path=/api/v1/profiles/**,/api/v1/follows/**
           filters:
             - Authentication
-				
-	- id: tweet-service
+            
+        - id: tweet-service
           uri: lb://TWEET-SERVICE
           predicates:
             - Path=/api/v1/tweets/**,/api/v1/likes/**
