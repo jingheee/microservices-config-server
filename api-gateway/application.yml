@@ -37,6 +37,11 @@ spring:
             - Path=/api/v1/tweets/**,/api/v1/likes/**
           filters:
             - Authentication
+            
+        - id: tweet-service-docs
+          uri: lb://TWEET-SERVICE
+          predicates:
+            - Path=/tweet-service/api-docs/**
 
 logging:
   level:
