@@ -53,6 +53,21 @@ spring:
           predicates:
             - Path=/tweet-service/api-docs/**
 
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    url: http://localhost:8080/v3/api-docs
+    urls:
+      - name: tweet-service
+        url: /tweet-service/api-docs
+
+      - name: profile-service
+        url: /profile-service/api-docs
+
+      - name: authentication-service
+        url: /authentication-service/api-docs
+
 logging:
   level:
     root: info

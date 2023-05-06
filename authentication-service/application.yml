@@ -31,6 +31,10 @@ spring:
           starttls.enable: true
           ssl.trust: smtp.gmail.com
 
+springdoc:
+  api-docs:
+    path: /authentication-service/api-docs
+
 eureka:
   client:
     service-url:
