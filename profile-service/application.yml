@@ -12,6 +12,10 @@ spring:
       authentication-database: admin
       auto-index-creation: true
 
+springdoc:
+  api-docs:
+    path: /profile-service/api-docs
+
 eureka:
   client:
     service-url:
