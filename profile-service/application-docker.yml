@@ -14,3 +14,6 @@ spring:
       host: mongo
       port: 27017
       database: Profile
+  cloud:
+    config:
+      uri: http://config-server:8888
