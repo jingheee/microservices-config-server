@@ -4,9 +4,6 @@ server:
 spring:
   datasource:
     url: jdbc:postgresql://postgres-authentication-service:5432/authentication-service
-  cloud:
-    config:
-      uri: http://config-server:8888
 
 eureka:
   client:
