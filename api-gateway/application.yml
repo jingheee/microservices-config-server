@@ -44,7 +44,7 @@ spring:
         - id: tweet-service
           uri: lb://TWEET-SERVICE
           predicates:
-            - Path=/api/v1/tweets/**,/api/v1/likes/**
+            - Path=/api/v1/tweets/**,/api/v1/likes/**,/api/v1/retweets/**
           filters:
             - Authentication
             
