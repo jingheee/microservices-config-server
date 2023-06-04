@@ -1,6 +1,19 @@
 server:
   port: 0
 
+cloud:
+  aws:
+    credentials:
+      access-key: "{cipher}AQC0ZMgQZr011mBsqqWPiALEqMKnx2bj/rfJCbDIDLrYPqFBNgSLhJt2PoMwdmDNXxcsxVlBqJ165D0fOrYWEOP88QYxSakCYI8Xfjo1X97N+21T4pt5LBhtwHM+uZZHYkPvbXfDIIjIY+ArqAoFVR9/la6n4CscqS19/QewxPXoX9uPlV+f1XjzEId21Hcvt1tSuncWnwT1SrxjqSeJKQDGRx/HYriN53n4moknOVcMB5zOVzZCWZP/NMARROJPbvL5baXyNsMkdQ3bS+yWnqhN7a6iziAgjih27j6CHxEX1cFPMy0t5GNC+gSQkZHFt57gCvpgb+afxpdTrZfrTNfcaFrJFSPfTHxeVa9K/TSo0bpLW280dYez1jTdVY/uwfolM8I3XbdrD6+eO+1qct7F"
+      secret-key: "{cipher}AQBNmNdtir99JH6WVBafgHkhWDn5+CjhqhA6jgEs4Lr4wH4X+NOknZTYRyGOH61FhwyV4R0BU3RsyCPBYqnSsFIxFL5GPQBllA/h8busMuaA0I3VA1hXdDNtAgEsiuIZvc1N1y+L0zG+zn5NJWE39+OsKUj8KM2boiSvHtDoS6dQIXIRD3a14yJVuj2I7dPnAC3gSzvqQkqlQWIfYvo5onWK4JxZvnaQOyc/QaMKWoQ1raHS6SBf9OCJpyHsQN5oCQQ5oKNg9LGDGGQzMasmVKwDnn0GTrGGHCdOi0b5Onqi4ZHLqAl1I4otEC9q4c2/6JJu5j3ATwgEUdfrPPLJlkPGUrcDj5/Ds7/QFKVqMZe/f8bo+Jitm/PjxFiTpGg6WWu5lnkqWN6SvNVer7qnGH0ZkQf6zicvHuKnPj5BmD1TBQ=="
+    region:
+      static: us-east-1
+    stack:
+      auto: false
+application:
+  bucket:
+    name: twitter-clone-storages
+
 spring:
   data:
     mongodb:
@@ -11,6 +24,12 @@ spring:
       database: Profile
       authentication-database: admin
       auto-index-creation: true
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2MB
+      max-file-size: 5MB
+      max-request-size: 10MB
 
 springdoc:
   api-docs:
