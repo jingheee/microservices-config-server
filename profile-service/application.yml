@@ -16,11 +16,6 @@ springdoc:
   api-docs:
     path: /profile-service/api-docs
 
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka
-
 logging:
   level:
     org:
@@ -30,6 +25,11 @@ logging:
             core:
               MongoTemplate: DEBUG
 
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
 services:
-  auth:
-    name: authentication-service
+  storage:
+    name: storage-service
