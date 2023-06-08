@@ -33,3 +33,5 @@ eureka:
 services:
   profile:
     name: profile-service
+  storage:
+    name: storage-service
