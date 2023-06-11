@@ -32,6 +32,11 @@ spring:
           predicates:
             - Path=/tweet-service/api-docs/**
 
+        - id: timeline-service-docs
+          uri: lb://TIMELINE-SERVICE
+          predicates:
+            - Path=/timeline-service/api-docs/**
+
         - id: profile-service
           uri: lb://PROFILE-SERVICE
           predicates:
@@ -43,6 +48,13 @@ spring:
           uri: lb://TWEET-SERVICE
           predicates:
             - Path=/api/v1/tweets/**,/api/v1/likes/**,/api/v1/retweets/**,/api/v1/replies/**
+          filters:
+            - Authentication
+
+        - id: timeline-service
+          uri: lb://TIMELINE-SERVICE
+          predicates:
+            - Path=/api/v1/timelines/**
           filters:
             - Authentication
 
@@ -60,6 +72,9 @@ springdoc:
 
       - name: authentication-service
         url: /authentication-service/api-docs
+
+      - name: timeline-service
+        url: /timeline-service/api-docs
 
 logging:
   level:
