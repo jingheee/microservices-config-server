@@ -76,11 +76,11 @@ springdoc:
       - name: timeline-service
         url: /timeline-service/api-docs
 
-logging:
-  level:
-    root: info
-    org.springframework.cloud.gateway.route.RouteDefinitionLocator: info
-    org.springframework.cloud.gateway: trace
+#logging:
+#  level:
+#    root: info
+#    org.springframework.cloud.gateway.route.RouteDefinitionLocator: info
+#    org.springframework.cloud.gateway: trace
 
 eureka:
   client:
