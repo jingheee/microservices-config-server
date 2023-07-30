@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://cloud:5431/tweet-service
+    url: jdbc:postgresql://cloud:5432/tweet-service
     username: root
     password: root
     driver-class-name: org.postgresql.Driver
