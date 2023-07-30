@@ -22,8 +22,8 @@ spring:
     default-encoding: UTF-8
     host: smtp.gmail.com
     port: 587
-    username: "{cipher}AQC4/X8dAgIkahrcrP2wEUAyG8Gq8RLL+FGpii/EQNW/eeq6+Hw695gv6yk39FPf8pwInCbwfLZRA2tFbATF53ox0C5B62eGPwtv9YUdSiA4ayw6zmRE0zV3KmWGyd184h99kYcse8LjCPGAnu69Ym/1KFe9oXDHy/oYHuh7KrRm+SMiGDLgcevAF+qfm4/SNbx1qE2QbNj1KifvHfhmOQe172sra87koOqSJONpK9xTXzNnxvHdBOR3F368gOBMmQoQaBuD4GACxnbHRV5VxzHQAX+RCeMfRd+xwX3hMZGeAq7tiSRR27fUQC4ufjh1RBhqw9cP5ncfm4191sxJ3hl/wc5Dw2piYAfRfz+KMa6b8dJbPv/2HXg96NsBWF0tOsHFbAqCXKg5lGkeoMLJggyy"
-    password: "{cipher}AQAHcoxSc/qbNB4IasoUWzCRGy7SS3KaJNKkmNfhOW3AZ+tZurPDpkesYm8eDdRFpcD2PwOOP32NXVgOtj68MGgJB85CtWUuTmheC852fTHePS6EG0CpC83+90aAPndbrzxRaFnhYwxvluNZbuO08efGhywxZ8tD6CyC1wRr5QLQ7hX+Ouv4Xhj+e7wXq6cKWgL4GuRjDHDEe3u5bE4sk8M8FeH0re97FSIcw999mGJhMkeJFUAc3P+mhwZEFtKOTY87qRb5OvRJmX675MSTZFpSRBvWwcpk3U7Uhwh8b/UsfvqrFx4LZok1tdTbwpREPTpgSxNUYV21Z11XkBc5r2xvp+Wy8QlgrLW9x5Q66TEML/8W5sf6y/0i0bre8IIrwwigcGR7c9naYtBqYyEJJnp2"
+    username: 114514@qq.com
+    password: 123456
     properties:
       mail:
         smtp:
