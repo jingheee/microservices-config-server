@@ -20,11 +20,11 @@ spring:
     redis:
       host: cloud
       port: 6379
-  kafka:
-    bootstrap-servers: cloud:9092
-    producer:
-      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+#  kafka:
+#    bootstrap-servers: cloud:9092
+#    producer:
+#      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      value-serializer: org.apache.kafka.common.serialization.StringSerializer
 
 springdoc:
   api-docs:
