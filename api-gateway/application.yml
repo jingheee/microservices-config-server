@@ -54,7 +54,7 @@ spring:
         - id: timeline-service
           uri: lb://TIMELINE-SERVICE
           predicates:
-            - Path=/api/v1/timelines/**
+            - Path=/api/v1/timeline/**
           filters:
             - Authentication
 
