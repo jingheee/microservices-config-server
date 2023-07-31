@@ -21,7 +21,7 @@ spring:
       host: cloud
       port: 6379
   kafka:
-    bootstrap-servers: cloud:9092
+    bootstrap-servers: cloud:9092,cloud:9093,cloud:9094
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
